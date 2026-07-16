@@ -9,3 +9,5 @@ This repository contains the source code for my personal website, hosted for fre
 
 ## Visit the website
 You can view the final result running in production here: [https://lanjos1.github.io/](https://lanjos1.github.io/)
+
+NEW WEBSITE
