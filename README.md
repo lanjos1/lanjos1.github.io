@@ -3,6 +3,7 @@
 This repository contains the source code for my personal website, hosted for free through GitHub Pages. The objective of this portal is to centralize my academic trajectory, scientific publications, professional experiences and projects developed.
 
 ## Technologies Used
+oi
 * HTML5
 * CSS3 (Based on Orbit template)
 *Bootstrap
