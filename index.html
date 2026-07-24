@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -19,6 +18,28 @@
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/orbit-1.css">
+    <!-- Custom fix: evita sobreposição entre título do cargo e a data quando o título é longo -->
+    <style>
+        .experiences-section .upper-row {
+            display: flex !important;
+            flex-wrap: wrap !important;
+            justify-content: space-between !important;
+            align-items: baseline !important;
+            gap: 6px 16px !important;
+            position: static !important;
+        }
+        .experiences-section .upper-row .job-title {
+            flex: 1 1 320px !important;
+            min-width: 0 !important;
+            margin: 0 !important;
+            position: static !important;
+        }
+        .experiences-section .upper-row .time {
+            flex: 0 0 auto !important;
+            white-space: nowrap !important;
+            position: static !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -95,7 +116,7 @@
                 <div class="item">
                     <div class="meta">
                         <div class="upper-row">
-                            <h3 class="job-title">Estagiária — Desenvolvimento de Produto (Propulsão de Veículos Elétricos)</h3>
+                            <h3 class="job-title">Estagiária — Desenvolvimento de Produto</h3>
                             <div class="time">2024 - 2025 (2 anos)</div>
                         </div><!--//upper-row-->
                         <div class="company">Ford</div>
@@ -132,9 +153,6 @@
                     <p>Iniciação científica, monitorias e liderança estudantil ao longo da graduação e mestrado.</p>
                 </div><!--//intro-->
                 <div class="item">
-                    <span class="project-title">Dissertação de Mestrado — MREEF</span> - <span class="project-tagline">Sistema de reconhecimento de emoções faciais baseado em CNN (TensorFlow/Keras), com inferência em tempo real via webcam e OpenCV.</span>
-                </div><!--//item-->
-                <div class="item">
                     <span class="project-title">Iniciação Científica — PIBIC CNPq (2022-2023)</span> - <span class="project-tagline">Pesquisa com foco em visão computacional.</span>
                 </div><!--//item-->
                 <div class="item">
@@ -145,6 +163,49 @@
                 </div><!--//item-->
                 <div class="item">
                     <span class="project-title">Monitoria de Inovações Tecnológicas (2021-2022)</span> - <span class="project-tagline">Colégio SESI Djalma Pessoa — apoio no desenvolvimento de projetos de iniciação científica.</span>
+                </div><!--//item-->
+            </section><!--//section-->
+
+            <section class="section projects-section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-code"></i></span>Projetos</h2>
+                <div class="intro">
+                    <p>Alguns projetos técnicos disponíveis no <a href="https://github.com/lanjos1" target="_blank">GitHub</a>.</p>
+                </div><!--//intro-->
+                <div class="item">
+                    <span class="project-title"><a href="https://github.com/lanjos1/Optimization-of-CNNs-for-Facial-Emotion-Recognition" target="_blank">Optimization of CNNs for Facial Emotion Recognition</a></span> - <span class="project-tagline">Reconhecimento de emoções faciais baseado em CNN, treinado no FER2013, com inferência em tempo real via webcam usando OpenCV e Haar Cascade (projeto de dissertação de mestrado — MREEF).</span>
+                </div><!--//item-->
+                <div class="item">
+                    <span class="project-title"><a href="https://github.com/lanjos1/Evaluation-of-SLAM-LiDAR-IMU-Strategies" target="_blank">Evaluation of SLAM LiDAR-IMU Strategies</a></span> - <span class="project-tagline">Análise comparativa de estratégias SLAM LiDAR-IMU (LeGO-LOAM e LIO-SAM) em ambiente simulado ROS/Gazebo, usando o robô Husky A200 e sensor Velodyne VLP-16.</span>
+                </div><!--//item-->
+                <div class="item">
+                    <span class="project-title"><a href="https://github.com/lanjos1/Mapping-and-Localization-SLAM-and-AMCL" target="_blank">Mapping and Localization (SLAM and AMCL)</a></span> - <span class="project-tagline">Geração de mapas com algoritmos SLAM (GMapping e Hector SLAM), execução de AMCL e comparação da pose estimada com o ground truth do Gazebo.</span>
+                </div><!--//item-->
+                <div class="item">
+                    <span class="project-title"><a href="https://github.com/lanjos1/Sensor-Fusion-on-the-Husky-Robot" target="_blank">Sensor Fusion on the Husky Robot</a></span> - <span class="project-tagline">Pacote para comparação de configurações de Filtro de Kalman no robô Husky.</span>
+                </div><!--//item-->
+                <div class="item">
+                    <span class="project-title"><a href="https://github.com/lanjos1/Husky-Simulation-LaR" target="_blank">Husky Simulation (LaR)</a></span> - <span class="project-tagline">Simulação e análise de odometria do robô Husky em ambiente Gazebo, usando ROS Noetic.</span>
+                </div><!--//item-->
+                <div class="item">
+                    <span class="project-title"><a href="https://github.com/lanjos1/Modeling-and-Control-of-Robo-UR5" target="_blank">Modeling and Control of Robot UR5</a></span> - <span class="project-tagline">Modelagem cinemática, planejamento de trajetória e controle do manipulador robótico UR5.</span>
+                </div><!--//item-->
+                <div class="item">
+                    <span class="project-title"><a href="https://github.com/lanjos1/Computational-method-for-Jungs-word-association-test" target="_blank">Computational Method for Jung's Word Association Test</a></span> - <span class="project-tagline">Implementação de um protocolo experimental que automatiza o Teste de Associação de Palavras de Carl Jung.</span>
+                </div><!--//item-->
+                <div class="item">
+                    <span class="project-title"><a href="https://github.com/lanjos1/Inverted-Pendulum" target="_blank">Inverted Pendulum</a></span> - <span class="project-tagline">Projeto de controle moderno de um pêndulo invertido.</span>
+                </div><!--//item-->
+                <div class="item">
+                    <span class="project-title"><a href="https://github.com/lanjos1/Distance-Reader-With-Communication-Between-Microcontrollers" target="_blank">Distance Reader With Communication Between Microcontrollers</a></span> - <span class="project-tagline">Sistema embarcado com dois Arduinos UNO em arquitetura mestre-escravo, comunicando via serial.</span>
+                </div><!--//item-->
+                <div class="item">
+                    <span class="project-title"><a href="https://github.com/lanjos1/Pong-Game-Using-Microcontroller-And-Computer-Interface" target="_blank">Pong Game Using Microcontroller and Computer Interface</a></span> - <span class="project-tagline">Jogo Pong usando Arduino e interface com computador via Processing.</span>
+                </div><!--//item-->
+                <div class="item">
+                    <span class="project-title"><a href="https://github.com/lanjos1/Salary-Estimation-Using-Regression-Model" target="_blank">Salary Estimation Using Regression Model</a></span> - <span class="project-tagline">Estimativa salarial usando machine learning para gerar um modelo de regressão.</span>
+                </div><!--//item-->
+                <div class="item">
+                    <span class="project-title"><a href="https://github.com/lanjos1/Single-Phase-Induction-Motor-with-Starting-Capacitor" target="_blank">Single-Phase Induction Motor with Starting Capacitor</a></span> - <span class="project-tagline">Motor de indução monofásico com capacitor de partida.</span>
                 </div><!--//item-->
             </section><!--//section-->
 
